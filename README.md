@@ -56,8 +56,8 @@ terraform apply
 
 ## Customization
 
-- Set the organization with `var.organization`.
-- Set the target project name with `var.project_name`.
+- Set the organization directly in `main.tf` by editing `locals.organization`.
+- Set the target project name with `var.project_name` in `variables.tf`.
 - Edit `local.terraform_managed_teams` in `team-management.tf` to define:
 	- `access_level`: `admin`, `maintain`, `write`, `read`, or `custom`
 	- `organization_access`: org-level team permissions
